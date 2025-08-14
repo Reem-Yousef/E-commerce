@@ -1,0 +1,136 @@
+<div class="_mainContainer">
+  <div class="_Container">
+    <div class="_image">
+      <div
+        class="_Title"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h3>Create your account</h3>
+        <p>
+          Discover the beauty of nature at your fingertips, where elegance meets
+          simplicity in vibrant designs. Nature-inspired pieces that add a touch
+          of luxury to every corner.
+        </p>
+      </div>
+    </div>
+    <div class="_FormContainer">
+      <div class="_Title">SignUp</div>
+      <form class="_Form" (ngSubmit)="register()" #form="ngForm">
+        <div class="_field _nameField">
+          <div class="_inputField">
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your Name"
+              class="_Name"
+              required
+              [(ngModel)]="user.username"
+              #username="ngModel"
+            />
+          </div>
+        </div>
+
+        <div class="_field _emailField">
+          <div class="_inputField">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="_Email"
+              required
+              [(ngModel)]="user.email"
+              #email="ngModel"
+            />
+          </div>
+        </div>
+
+        <div class="_field create-password">
+          <div class="_inputField">
+            <input
+              type="password"
+              name="password"
+              placeholder="Create password"
+              class="_Password"
+              required
+              [(ngModel)]="user.password"
+              #password="ngModel"
+            />
+          </div>
+        </div>
+
+        <div class="_field confirm-password">
+          <div class="_inputField">
+            <input
+              type="password"
+              placeholder="Confirm password"
+              class="_confiermPassword"
+              required
+              [(ngModel)]="confirmPassword"
+              name="confirmPassword"
+            />
+          </div>
+        </div>
+
+        <div class="_field">
+          <div class="_inputField">
+            <input
+              type="text"
+              placeholder="Address"
+              class="_Address"
+              required
+              name="address"
+              [(ngModel)]="user.addresses[0]"
+              #address="ngModel"
+            />
+          </div>
+        </div>
+
+        <div class="_field">
+          <div class="_inputField">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              class="_Phone"
+              required
+              name="phone"
+              [(ngModel)]="user.phoneNumbers[0]"
+              #phone="ngModel"
+            />
+          </div>
+        </div>
+
+        <div class="_field">
+          <div class="_inputField">
+            <input
+              type="number"
+              placeholder="Age"
+              class="_Age"
+              name="age"
+              required
+              [(ngModel)]="user.age"
+              #age="ngModel"
+              min="18"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="_inputField _button">
+          <input type="submit" value="SignUp Now" class="_btn" />
+        </div>
+        <span class="_error password-error" *ngIf="errorMsg">
+          <i class="bx bx-error-circle error-icon"></i>
+          <p class="error-text">{{ errorMsg }}</p>
+        </span>
+        <div class="_Link">
+          <a [routerLink]="['/signin']" id="_GoToLogin">Have an account?</a>
+        </div>
+
+        <div class="_footerCopyRight">
+          <div class="_text">Copyright &copy; 2025 Generic eCommerce</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

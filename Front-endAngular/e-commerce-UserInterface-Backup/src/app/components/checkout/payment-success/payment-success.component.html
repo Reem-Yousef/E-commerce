@@ -1,0 +1,60 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="payment-container text-center p-4 rounded shadow-sm mx-auto" style="max-width: 500px;">
+    
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="loading-state">
+      <div class="spinner-border text-success mb-3" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <h3>Verifying your payment...</h3>
+      <p>Please wait while we confirm your transaction.</p>
+    </div>
+
+    <!-- Success State -->
+    <div *ngIf="!isLoading && paymentVerified" class="success-state">
+      <div class="icon success mb-3 d-flex justify-content-center align-items-center flex-column">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFocfOtRt2wtjVSK7gYU7-mqdDQZiVG2w8i99KxSENPLi2c8BTN_8HPRTpf9brnd9bcpk&usqp=CAU" 
+          alt="Success Icon"
+          class="img-fluid mb-3"
+          style="max-width: 200px;"
+        >
+      </div>
+      <h2 class="text-success mb-3">Payment Successful!</h2>
+      <p class="mb-4 px-3 px-md-0">
+        Your order has been placed successfully. Thank you for shopping with us.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button 
+          type="button" 
+          class="btn btn-success px-4 me-md-2" 
+          (click)="navigateToOrders()">
+          View My Orders
+        </button>
+        <button 
+          type="button" 
+          class="btn btn-outline-success px-4" 
+          (click)="navigateToDashboard()">
+          Back to Dashboard
+        </button>
+      </div>
+    </div>
+
+    <!-- Failed State -->
+    <div *ngIf="!isLoading && !paymentVerified" class="failed-state">
+      <h2 class="text-danger mb-3">Payment Verification Failed</h2>
+      <p class="mb-4 px-3 px-md-0">
+        We couldn't verify your payment. Please contact support or try again.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button 
+          type="button" 
+          class="btn btn-primary px-4 me-md-2" 
+          (click)="navigateToDashboard()">
+          Back to Dashboard
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

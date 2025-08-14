@@ -1,0 +1,460 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+._Container {
+    position: relative;
+    width: 100%;
+    background-color: var(--color-green-Dark);
+}
+
+._SubContainer {
+    width: 100%;
+    background-color: var(--color-green-Dark);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    height: auto;
+}
+
+._SubContainer ._SectionOne {
+    position: relative;
+    width: 20%;
+    background-color: var(--color-green-Dark);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+}
+
+._SubContainer ._SectionOne ._Logo {
+    width: 100%;
+}
+
+._SubContainer ._SectionOne ._Logo .navbar-brand {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+._SubContainer ._SectionOne ._Logo .navbar-brand img {
+    max-width: 40px;
+    animation: fadeInLeft 0.4s both 0.4s;
+}
+
+._SubContainer ._SectionOne ._Logo .navbar-brand span {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+._SubContainer ._SectionOne ._Logo .navbar-brand {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+._Links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+._SubContainer ._SectionOne ._List {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    padding: 3px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+._List._unique {
+    background-color: var(--color-light-green-in);
+
+}
+
+._List._active {
+    background-color: var(--color-light-green-in);
+}
+
+._SubContainer ._SectionOne .clicable {
+    cursor: pointer;
+}
+
+._SubContainer ._SectionOne ._List ._Image {
+    width: 25px;
+    height: 25px;
+}
+
+._SubContainer ._SectionOne ._List ._Image svg {
+    width: 25px;
+    height: 25px;
+}
+
+._SubContainer ._SectionOne ._List ._Link p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-white);
+    line-height: 2.5rem;
+}
+
+._SubContainer ._SectionOne ._Links ._List:hover ._Link p,
+._SubContainer ._SectionOne ._Links ._List:hover ._Image svg path {
+    transition: all 0.3s ease-in-out;
+    color: var(--color-black);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    stroke: var(--color-black);
+}
+
+._SubContainer ._SectionOne ._Links ._List:hover ._Image ._uniqeSVG path,
+._SubContainer ._SectionOne ._Links ._List:hover ._Image ._uniqeSVG g,
+._SubContainer ._SectionOne ._Links ._List:hover ._Image ._uniqeSVG {
+    fill: var(--color-black);
+    stroke: var(--color-black);
+
+}
+
+._Logout {
+    position: absolute;
+    width: 82%;
+    bottom: 2rem;
+}
+
+._SubContainer ._SectionOne ._Logout ._List:hover ._Link p,
+._SubContainer ._SectionOne ._Logout ._List:hover ._Image svg path {
+    transition: all 0.3s ease-in-out;
+    color: #ff0000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    stroke: #ff0000;
+}
+
+/* -------------------------------------------------------------------------- */
+._SubContainer ._SectionTwo {
+    width: 79%;
+    min-height: 90vh;
+    background-color: var(--color-white);
+    position: relative;
+    top: 0px;
+    left: 20%;
+    margin-top: 5rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+._SubContainer ._SectionTwo ._One {
+    padding: 2rem 2rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header {
+    border-bottom: 1px solid var(--color-black);
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header .iconArrow {
+    width: 0.9rem;
+}
+
+._SubContainer ._SectionTwo ._One ._Header span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 2rem;
+    color: var(--color-black);
+}
+
+._SubContainer ._SectionTwo ._Two {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo h3 {
+    color: var(--color-black);
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    background-color: var(--color-green-Dark);
+    border-radius: 0.4rem;
+    color: var(--color-white);
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button svg {
+    width: 25px;
+    height: 25px;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button:hover {
+    background-color: transparent;
+    outline: 1px solid var(--color-black);
+    color: var(--color-black);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon button:hover svg path {
+    transition: all 0.3s ease-in-out;
+    color: var(--color-black);
+    stroke: var(--color-black);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon ._UserImage {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--color-green);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon ._UserImage img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 850px) {
+    ._SubContainer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._SubContainer ._SectionOne {
+        display: none;
+        z-index: 10000000;
+        width: 50%;
+        background-color: var(--color-green);
+    }
+
+    ._SubContainer ._SectionTwo {
+        width: 90%;
+        top: 0%;
+        left: 0%;
+    }
+
+    ._SubContainer ._SectionTwo ._One {
+        padding: 1.5rem 1.5rem;
+    }
+
+    ._SubContainer ._SectionTwo ._Two {
+        padding: 0rem 1.5rem;
+        gap: 15px;
+    }
+
+    ._SubContainer ._SectionTwo ._Two ._UserCreate {
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+        gap: 10px;
+    }
+
+    ._SubContainer ._SectionTwo ._Two ._UserCreate ._MyTodo {
+        font-size: 1.3rem;
+    }
+
+    ._SubContainer ._SectionTwo ._Two ._UserCreate ._UserIcon {
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+    }
+
+
+    #ToData {
+        display: none;
+    }
+
+    .navbar-toggler {
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        border: none;
+        border-radius: 0.4rem;
+        outline: none !important;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        z-index: 10;
+    }
+
+    ._SubContainer .navbar-toggler .icon-bar {
+        background-color: var(--color-black);
+        margin: 0 auto 6px;
+        border-radius: 0;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        right: 0%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    ._SubContainer .navbar .navbar-toggler .icon-bar:first-child {
+        margin-top: 3px;
+    }
+
+    ._SubContainer .navbar-toggler .icon-bar-1 {
+        width: 10px;
+        top: 0px;
+    }
+
+    ._SubContainer .navbar-toggler .icon-bar-2 {
+        width: 16px;
+        top: 11px;
+    }
+
+    ._SubContainer .navbar-toggler .icon-bar-3 {
+        width: 20px;
+        top: 21px;
+    }
+
+    ._SubContainer .current .icon-bar {
+        margin-bottom: 5px;
+        border-radius: 0;
+        display: block;
+    }
+
+    ._SubContainer .current .icon-bar-1 {
+        width: 18px;
+    }
+
+    ._SubContainer .current .icon-bar-2 {
+        width: 30px;
+    }
+
+    ._SubContainer .current .icon-bar-3 {
+        width: 10px;
+    }
+
+    ._SubContainer .navbar-toggler:hover .icon-bar {
+        background-color: var(--color-green);
+    }
+
+    ._SubContainer .navbar-toggler:focus .icon-bar {
+        background-color: var(--color-green);
+    }
+}
+
+@media (min-width:0px) and (max-width:550px) {
+    ._SubContainer ._SectionOne {
+        display: none;
+        z-index: 10000000;
+        width: 77% !important;
+        background-color: var(--color-green-Dark);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+}

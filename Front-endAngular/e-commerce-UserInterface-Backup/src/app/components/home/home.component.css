@@ -1,0 +1,868 @@
+._HeroContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../assets/images/home-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+._HeroContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 18, 25, 0.6);
+    z-index: 1;
+}
+
+._HeroContainer>* {
+    position: relative;
+    z-index: 2;
+}
+
+._HeroContainer .container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+._HeroContainer .container-fluid ._TextHero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+._HeroContainer .container-fluid ._TextHero ._WellcomeText,
+._MainText,
+._BtnShop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._HeroContainer .container-fluid ._TextHero ._WellcomeText p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+._HeroContainer .container-fluid ._TextHero ._MainText h2 {
+    width: 70%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+._HeroContainer .container-fluid ._TextHero ._BtnShop button,
+._SaleComponent .container-fluid ._BtnShop button {
+    background-color: var(--color-green);
+    border-radius: 0.4rem;
+    color: var(--color-white);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 15%;
+    will-change: transform;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -webkit-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -moz-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -ms-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -o-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+
+._HeroContainer .container-fluid ._TextHero ._BtnShop button:hover {
+    background-color: transparent;
+    outline: 1px solid var(--color-light-green);
+    color: var(--color-white);
+}
+
+
+/* ------------------------------- section two ------------------------------ */
+._Products {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+._Products ._ProductsInHome {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+._OneProductInHome {
+    width: 30%;
+}
+
+._LifeShoping {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+._LifeShoping .container-fluid {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._LifeShoping .container-fluid ._OneCard {
+    width: calc(20% - 1rem);
+    min-width: 180px;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+._LifeShoping .container-fluid ._OneCard ._Image {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._LifeShoping .container-fluid ._OneCard ._Image ._ImageContainer {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-light-green);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+._LifeShoping .container-fluid ._OneCard ._Image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+._LifeShoping .container-fluid ._OneCard ._TextCard {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+._LifeShoping .container-fluid ._OneCard ._TextCard ._Title {
+    width: 100%;
+    text-align: center;
+}
+
+._LifeShoping .container-fluid ._OneCard ._TextCard ._Title span {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--color-balck);
+}
+
+._LifeShoping .container-fluid ._OneCard ._TextCard ._Disc {
+    width: 100%;
+    text-align: center;
+}
+
+._LifeShoping .container-fluid ._OneCard ._TextCard ._Disc span {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--color-Gray);
+}
+
+/* ------------------------------ section three ----------------------------- */
+._SaleComponent {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../../assets/images/middle-cta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+._SaleComponent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 18, 25, 0.6);
+    z-index: 1;
+}
+
+._SaleComponent>* {
+    position: relative;
+    z-index: 2;
+}
+
+._SaleComponent .container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+._SaleComponent .container-fluid ._Title {
+    width: 50%;
+    text-align: center;
+}
+
+._SaleComponent .container-fluid ._Title span {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--color-white);
+}
+
+
+._SaleComponent .container-fluid ._Disc {
+    width: 40%;
+    text-align: center;
+}
+
+._SaleComponent .container-fluid ._Disc span {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+._SaleComponent .container-fluid ._BtnShop {
+    width: 100%;
+    text-align: center;
+}
+
+._SaleComponent .container-fluid ._BtnShop button {
+    background-color: transparent;
+    border: 1px solid var(--color-light-green);
+}
+
+._SaleComponent .container-fluid ._BtnShop button:hover {
+    background-color: var(--color-white);
+    color: var(--color-balck);
+}
+
+
+
+/* ------------------------------ section Four ------------------------------ */
+._Categories {
+    width: 100%;
+    height: 100vh;
+}
+
+._Categories .container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+._Categories .container-fluid ._Title,
+._Products .container-fluid ._Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+._Categories .container-fluid ._Title h2,
+._Products .container-fluid ._Title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+._Categories .container-fluid ._OurCategories {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+._Categories .container-fluid ._OurCategories ._OneCard {
+    width: calc(20% - 1rem);
+    min-width: 200px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+._Categories .container-fluid ._OurCategories ._OneCard img {
+    width: 100%;
+    height: 100%;
+
+}
+
+._Categories .container-fluid ._OurCategories ._OneCard p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--color-balck);
+}
+
+/* ------------------------------ section five ------------------------------ */
+._Ready {
+    height: 60vh;
+    background-image: url(../../../assets/images/footer-bg.jpg);
+}
+
+._Ready .container-fluid ._Disc {
+    width: 30%;
+}
+
+
+._Ready .container-fluid ._BtnShop button {
+    background-color: var(--color-green);
+    border: none;
+}
+
+._Ready .container-fluid ._BtnShop button:hover {
+    background-color: transparent;
+    outline: 1px solid var(--color-light-green);
+    color: var(--color-white);
+}
+
+
+/* ------------------------------- section six ------------------------------ */
+._StatusContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 4rem 0rem;
+    background-color: var(--color-light-green);
+}
+
+._StatusContainer .container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+ّ ّ ._StatusContainer .container-fluid ._statusImage {
+    width: calc(90%/2 - 2rem);
+    display: flex;
+    justify-content: center;
+}
+
+._StatusContainer .container-fluid ._statusImage ._Image,
+._StatusContainer .container-fluid ._statusImage ._Image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+._StatusContainer .container-fluid ._TextHero {
+    width: calc(90%/2 - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+._StatusContainer .container-fluid ._TextHero ._TitleText {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+    width: 80%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+
+._StatusContainer .container-fluid ._TextHero ._DescText {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._StatusContainer .container-fluid ._TextHero ._DescText p {
+    width: 90%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-Gray);
+}
+
+._StatusContainer .container-fluid ._TextHero ._Status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._StatusContainer .container-fluid ._TextHero ._Status::before {
+    content: '';
+    width: 90%;
+    margin: 0rem 0.5rem;
+    border-top: 1px solid var(--color-light-Gray);
+}
+
+._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+}
+
+
+._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusNumber {
+    width: 100%;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusText {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--color-Gray);
+}
+
+
+@media (min-width: 534.5px) and (max-width: 991px) {
+    ._HeroContainer .container-fluid ._TextHero {
+        gap: 0;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._WellcomeText p {
+        font-size: 1rem;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._MainText h2 {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._BtnShop button {
+        width: 25%;
+    }
+
+    ._LifeShoping .container-fluid {
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard {
+        width: calc(45% - 1rem);
+        height: 25vh;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard ._TextCard ._Title span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard ._TextCard ._Disc span {
+        font-size: 0.9rem;
+    }
+
+    ._SaleComponent .container-fluid {
+        gap: 1rem;
+    }
+
+    ._SaleComponent .container-fluid ._Title {
+        width: 90%;
+    }
+
+    ._SaleComponent .container-fluid ._Title span {
+        font-size: 2rem;
+    }
+
+    ._SaleComponent .container-fluid ._Disc {
+        width: 90%;
+    }
+
+    ._SaleComponent .container-fluid ._BtnShop button {
+        width: 25%;
+    }
+
+    ._Categories {
+        width: 100%;
+        height: auto;
+    }
+
+    ._Categories .container-fluid {
+        height: auto;
+    }
+
+    ._Categories .container-fluid ._Title {
+        margin: 3rem 0rem;
+    }
+
+    ._Categories .container-fluid ._Title h2 {
+        font-size: 2.5rem;
+    }
+
+    ._Categories .container-fluid ._OurCategories {
+        gap: 1rem;
+    }
+
+    ._Categories .container-fluid ._OurCategories ._OneCard {
+        width: calc(40% - 1rem);
+    }
+
+    ._StatusContainer {
+        padding: 2rem 0rem;
+    }
+
+    ._StatusContainer .container-fluid {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 1rem 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._statusImage {
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._TitleText {
+        display: flex;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+        width: 95%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._DescText {
+        display: flex;
+        justify-content: center;
+        padding: 0rem;
+
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._DescText p {
+        width: 95%;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status::before {
+        content: '';
+        width: 95%;
+        margin: 0rem 0rem;
+        border-top: 1px solid var(--color-light-Gray);
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+        width: 95%;
+        padding: 1rem 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusNumber {
+        font-size: 1.5rem;
+    }
+
+    ._OneProductInHome {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 534px) {
+    ._HeroContainer .container-fluid ._TextHero {
+        gap: 0;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._WellcomeText p {
+        font-size: 1rem;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._MainText h2 {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    ._HeroContainer .container-fluid ._TextHero ._BtnShop button {
+        width: 35%;
+    }
+
+    ._LifeShoping .container-fluid {
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+
+    ._Products {
+        padding: 1rem;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard {
+        width: calc(100% - 1rem);
+        height: 25vh;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard ._TextCard ._Title span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    ._LifeShoping .container-fluid ._OneCard ._TextCard ._Disc span {
+        font-size: 0.9rem;
+    }
+
+    ._SaleComponent .container-fluid {
+        gap: 1rem;
+    }
+
+    ._SaleComponent .container-fluid ._Title {
+        width: 90%;
+    }
+
+    ._SaleComponent .container-fluid ._Title span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    ._SaleComponent .container-fluid ._Disc {
+        width: 90%;
+    }
+
+    ._SaleComponent .container-fluid ._Disc span {
+        font-size: 0.9rem;
+    }
+
+    ._SaleComponent .container-fluid ._BtnShop button {
+        width: 40%;
+    }
+
+
+    ._Categories {
+        width: 100%;
+        height: auto;
+    }
+
+    ._Categories .container-fluid {
+        height: auto;
+    }
+
+    ._Categories .container-fluid ._Title {
+        margin-top: 3rem;
+
+    }
+
+    ._Categories .container-fluid ._Title h2 {
+        font-size: 2.5rem;
+    }
+
+    ._Categories .container-fluid ._OurCategories {
+        gap: 1rem;
+    }
+
+    ._Categories .container-fluid ._OurCategories ._OneCard {
+        width: 100%;
+    }
+
+    ._Categories .container-fluid ._OurCategories ._OneCard p {
+        font-size: 1.5rem;
+    }
+
+
+
+    ._StatusContainer {
+        padding: 1rem 0rem;
+    }
+
+    ._StatusContainer .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._statusImage {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._TitleText {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._DescText {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._DescText p {
+        width: 100%;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status::before {
+        content: '';
+        width: 95%;
+        margin: 0rem 0rem;
+        border-top: 1px solid var(--color-light-Gray);
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+
+    ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusNumber {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusText {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    ._OneProductInHome {
+        width: 100%;
+    }
+
+}

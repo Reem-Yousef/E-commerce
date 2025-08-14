@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="payment-container">
+    <div class="cancel-icon-container">
+      <img 
+        src="https://www.shutterstock.com/image-vector/flat-style-illustration-delivery-man-260nw-1479816710.jpg" 
+        alt="Delivery man" 
+        class="cancel-image"
+      />
+    </div>
+    
+    <h2 class="payment-title">Payment Cancelled</h2>
+    
+    <p class="payment-message">
+      Your payment was not completed. You can try again or return later.
+      Don't worry, no charges have been made to your account.
+    </p>
+    
+    <div class="button-group">  
+      <button 
+        type="button" 
+        class="btn btn-custom btn-outline-custom"
+        (click)="navigateToCart()">
+        <i class="bi bi-cart"></i>
+        View Cart
+      </button>
+      
+      <button 
+        type="button" 
+        class="btn btn-custom btn-success-custom"
+        (click)="navigateToDashboard()">
+        <i class="bi bi-house"></i>
+        Dashboard
+      </button>
+    </div>
+  </div>
+</div>
