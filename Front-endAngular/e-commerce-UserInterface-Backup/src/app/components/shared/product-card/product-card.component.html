@@ -1,0 +1,75 @@
+<div class="product-card" *ngIf="product" (click)="navigateToProduct()">
+  <div class="product-image-container">
+    <!-- Updated wishlist button with dynamic styling and toggle functionality -->
+    <button
+      *ngIf="authService.isAuthenticated()"
+      class="wishlist-btn"
+      [class.wishlist-active]="isInWishlist"
+      [disabled]="isAddingToWishlist(product._id)"
+      (click)="toggleWishlist(product._id); $event.stopPropagation()"
+      [title]="isInWishlist ? 'Remove from Wishlist' : 'Add to Wishlist'"
+    >
+      <!-- Loading spinner when adding/removing -->
+      <div *ngIf="isAddingToWishlist(product._id)" class="wishlist-spinner">
+        <svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+      </div>
+      
+      <!-- Heart icon -->
+      <svg *ngIf="!isAddingToWishlist(product._id)" 
+           xmlns="http://www.w3.org/2000/svg" 
+           [attr.fill]="isInWishlist ? '#88ad35' : 'none'"
+           viewBox="0 0 24 24" 
+           stroke-width="1.5"
+           stroke="currentColor" 
+           class="wishlist-icon">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 8.5c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.099 4 3 6.015 3 8.5c0 7.5 9 12 9 12s9-4.5 9-12z" />
+      </svg>
+    </button>
+
+    <img
+      *ngIf="product.images?.length"
+      [src]="product.images[0]"
+      [alt]="product.name || 'Product image'"
+      class="product-image"
+      loading="lazy"
+    />
+    <div *ngIf="!product.inStock" class="out-of-stock-overlay">
+      Out of Stock
+    </div>
+  </div>
+
+  <div class="product-info">
+    <div class="product-category">{{ product.category }}</div>
+    <h3 class="product-name">{{ product.name }}</h3>
+
+    <div class="product-pricing">
+      <span class="current-price">
+        {{ product.price ? ('$' + product.price.toFixed(2)) : '' }}
+      </span>
+      <span
+        *ngIf="product.originalPrice && product.originalPrice > product.price"
+        class="original-price"
+      >
+        {{ '$' + product.originalPrice.toFixed(2) }}
+      </span>
+    </div>
+
+    <div class="product-actions">
+      <button 
+        class="add-to-cart-btn"
+        [disabled]="!product.inStock || isAddingToCart(product._id)"
+        (click)="addToCart(); $event.stopPropagation()">
+        <span *ngIf="!isAddingToCart(product._id)">
+          {{ product.inStock ? 'Add to cart' : 'Out of Stock' }}
+        </span>
+        <span *ngIf="isAddingToCart(product._id)">
+          Adding...
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

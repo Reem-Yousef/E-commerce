@@ -1,0 +1,301 @@
+._mainContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+/* ------------------------------- loader icon ------------------------------ */
+._mainContainer ._loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000da;
+    z-index: 10000;
+}
+
+._mainContainer ._loader ._loaderIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+._mainContainer ._loader ._loaderIcon img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+._mainContainer ._Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--White-color);
+    width: 100%;
+    min-height: 100vh;
+}
+
+._mainContainer ._Container ._FormContainer {
+    width: 50%;
+    padding: 2rem;
+}
+
+._mainContainer ._Container ._image {
+    position: relative;
+    width: 50%;
+    height: 110vh;
+    background-image: url(../../../assets/images/sign_in_up/signinupbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+._mainContainer ._Container ._image ._Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    padding: 0px 2rem;
+}
+
+._mainContainer ._Container ._image ._Title h3 {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--White-color);
+    line-height: 2rem;
+}
+
+._mainContainer ._Container ._image ._Title p {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-light-Gray);
+    line-height: 1.4rem;
+}
+
+._mainContainer ._Container ._FormContainer ._Title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--color-black);
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._field {
+    margin-bottom: 1rem;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._inputField {
+    position: relative;
+    width: 100%;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._Link {
+    text-align: right;
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._Link a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--Main-Color);
+    text-decoration: none;
+    line-height: 1.3rem;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._inputField input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._inputField input:focus {
+    border-color: #4070f4;
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._inputField .show-hide {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #777;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._error {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    justify-content: left;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #d93025;
+    align-items: center;
+}
+
+.error-icon {
+    margin-right: 6px;
+    padding: 0.2rem 0rem;
+}
+
+
+
+._mainContainer ._Container ._FormContainer ._Form ._button ._btn {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border: 2px solid var(--color-green);
+}
+
+._mainContainer ._Container ._FormContainer ._Form ._checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+
+._mainContainer ._Container ._FormContainer ._Form ._checkbox span {
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+._Form ._footerCopyRight {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+._Form ._footerCopyRight ._text {
+    text-align: center;
+    width: 98%;
+    padding: 0.5rem;
+    color: var(--color-black);
+    border-top: 1px solid var(--color-light-Gray);
+    font-size: 0.8rem;
+}
+
+
+
+._btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transition: background-color 0.3s ease;
+}
+
+
+@media (min-width: 0px) and (max-width: 700px) {
+    ._mainContainer {
+        position: relative;
+        background-image: url(../../../assets/images/sign_in_up/signinupbackground.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    ._mainContainer ._Container ._FormContainer ._Form ._inputField input {
+        background-color: transparent;
+    }
+
+    ._mainContainer {
+        background-position: 100%;
+    }
+
+    ._mainContainer ._Container {
+        display: flex;
+        width: 80%;
+    }
+
+    ._mainContainer ._Container ._FormContainer {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    ._mainContainer ._Container ._image {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    ._mainContainer ._Container ._FormContainer {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    ._mainContainer ._Container ._image ._Title {
+        gap: 0.5rem;
+        padding: 0px 1rem;
+    }
+
+    ._mainContainer ._Container ._image ._Title h3 {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    ._mainContainer ._Container ._image ._Title p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    ._mainContainer ._Container ._FormContainer ._Title {
+        font-size: 1.8rem;
+    }
+
+    ._Form ._footerCopyRight {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

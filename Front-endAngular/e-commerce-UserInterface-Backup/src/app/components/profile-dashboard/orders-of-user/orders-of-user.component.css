@@ -1,0 +1,249 @@
+._OrdersInDashBoard {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+._OrdersInDashBoard ._OneOrderInTable {
+    width: 40%;
+}
+
+._OrdersInDashBoard ._Quantaty,
+._OrdersInDashBoard ._Total {
+    position: relative;
+    width: 20%;
+    padding: 0px;
+}
+
+
+._OrdersInDashBoard ._Quantaty span,
+._OrdersInDashBoard ._Total span {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+
+._OrdersInDashBoard ._OneOrder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    height: auto;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    gap: 1rem;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderImage {
+    width: 25%;
+    position: relative;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderImage ._Image {
+    width: 100%;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderImage ._Image img {
+    width: 100%;
+}
+
+
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Title {
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Title h3 {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--color-balck);
+    padding: 0px;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Disc {
+    width: 100%;
+    height: fit-content;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Disc p {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: var(--color-Gray);
+    padding: 0px;
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Price {
+    width: 100%;
+    height: fit-content;
+
+}
+
+._OrdersInDashBoard ._OneOrder ._OrderDisc ._Price span {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-black);
+    padding: 0px;
+    padding: 0.5rem;
+    background-color: var(--color-light-green);
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+
+._InResponsive {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .table thead {
+        display: none;
+    }
+
+    ._InResponsive {
+        display: block;
+    }
+
+    .table tbody tr {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+        height: 35vh;
+    }
+
+    .table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        height: 60%;
+        background-color: transparent;
+    }
+
+    ._OneOrderInTable {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    ._oneOrderInResponsive {
+        position: relative;
+    }
+
+    ._Quantaty,
+    ._Total {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 1rem;
+        width: calc(100%/3 - 1rem) !important;
+        position: absolute !important;
+        top: 60%;
+        height: 30% !important;
+
+    }
+
+    ._QuantatyInResponsive {
+        left: 1rem;
+    }
+
+    ._PriceInResponsive {
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+
+    ._TotalInResponsive {
+        right: 1rem;
+    }
+
+    ._InResponsive {
+        width: 100%;
+        text-align: center;
+    }
+
+    .number {
+        position: relative !important;
+        top: 0px !important;
+    }
+
+    ._OneOrder {
+        height: 100% !important;
+        width: 100% !important;
+        gap: 0.5rem;
+    }
+
+    ._OrderImage {
+        width: 40% !important;
+    }
+
+    ._OrderImage ._Image {
+        width: 100%;
+        height: 100%;
+    }
+
+    ._OrderImage ._Image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.4rem;
+    }
+
+    ._OrderDisc {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    ._Title h3,
+    ._Disc p {
+        margin: 0;
+    }
+}

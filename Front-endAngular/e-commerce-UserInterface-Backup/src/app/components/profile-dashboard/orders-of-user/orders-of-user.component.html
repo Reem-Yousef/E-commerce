@@ -1,0 +1,62 @@
+<div class="_OrdersInDashBoard">
+  <table class="table">
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          class="_ProductPadding"
+          style="padding-left: 2rem; width: 60%"
+        >
+          Product
+        </th>
+        <th scope="col" style="width: 20%; text-align: center">Quantaty</th>
+        <th scope="col" style="width: 20%; text-align: center">price</th>
+        <th scope="col" style="width: 20%; text-align: center">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div *ngIf="isLoading">Loading orders...</div>
+      <div *ngIf="error">{{ error }}</div>
+      <div *ngIf="!isLoading && orders.length === 0 && !error">
+        <p>No orders found.</p>
+      </div>
+      <ng-container *ngFor="let order of orders">
+        <tr class="_oneOrderInResponsive" *ngFor="let item of order.items">
+          <td class="_OneOrderInTable">
+            <div class="_OneOrder">
+              <div class="_OrderImage">
+                <div class="_Image">
+                  <img [src]="item.product.images[0]" alt="Product image" />
+                </div>
+              </div>
+              <div class="_OrderDisc">
+                <div class="_Title">
+                  <h3>{{ item.product.title }}</h3>
+                </div>
+                <div class="_Disc">
+                  <p>
+                    {{ item.product.description | trimString : 30 }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="_Quantaty _QuantatyInResponsive" data-label="Quy">
+            <div class="_InResponsive">Quantity</div>
+            <span class="number">{{ item.quantity }}</span>
+          </td>
+          <td class="_Quantaty _PriceInResponsive" data-label="Price">
+            <div class="_InResponsive">Price</div>
+            <span class="number">${{ item.product.price }}</span>
+          </td>
+          <td class="_Total _TotalInResponsive" data-label="Total">
+            <div class="_InResponsive">Total</div>
+            <span class="number"
+              >${{ item.quantity * item.product.price }}</span
+            >
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,31 @@
+<!-- Cart Icon -->
+<div class="cart-mini-trigger" (click)="toggleCart()">
+  🛒
+  <span class="cart-count" *ngIf="itemCount > 0">{{ itemCount }}</span>
+</div>
+
+<!-- Sidebar -->
+<div class="cart-sidebar" [class.open]="isOpen">
+  <div class="cart-header">
+    <span>Shopping Cart</span>
+    <button class="close-btn" (click)="toggleCart()">✕</button>
+  </div>
+
+  <div class="cart-item">
+    <img src="https://via.placeholder.com/60" alt="product" />
+    <div class="cart-item-info">
+      <div class="product-name">Tropical Breeze</div>
+      <div class="product-price">2 × $80.00</div>
+    </div>
+  </div>
+
+  <div class="cart-subtotal">
+    <span>Subtotal:</span>
+    <span>\${{ total.toFixed(2) }}</span>
+  </div>
+
+  <div class="cart-buttons">
+    <button class="view-btn">View cart</button>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>

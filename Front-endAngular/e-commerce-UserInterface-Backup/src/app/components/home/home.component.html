@@ -1,0 +1,211 @@
+<div>
+  <div class="_HeroContainer">
+    <div class="container-fluid" data-aos="fade-down" data-aos-delay="800">
+      <div class="_TextHero">
+        <div class="_WellcomeText">
+          <p>Welcome to Urban Jungle Co.</p>
+        </div>
+        <div class="_MainText">
+          <h2>Discover the Beauty of Nature at Your Fingertips</h2>
+        </div>
+        <div class="_BtnShop">
+          <button [routerLink]="['/products']"><span>Shop Now</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_LifeShoping">
+    <div class="container-fluid">
+      <div class="_OneCard" data-aos="fade-right" data-aos-delay="400">
+        <div class="_Image">
+          <div class="_ImageContainer">
+            <img src="../../../assets/images/payment.svg" alt="payment image" />
+          </div>
+        </div>
+        <div class="_TextCard">
+          <div class="_Title">
+            <span>Secure Payment</span>
+          </div>
+          <div class="_Disc">
+            <span>Elementum feugiat diam </span>
+          </div>
+        </div>
+      </div>
+      <div class="_OneCard" data-aos="fade-right" data-aos-delay="500">
+        <div class="_Image">
+          <div class="_ImageContainer">
+            <img src="../../../assets/images/car.svg" alt="car image" />
+          </div>
+        </div>
+        <div class="_TextCard">
+          <div class="_Title">
+            <span>Free Shipping</span>
+          </div>
+          <div class="_Disc">
+            <span>For $50 order </span>
+          </div>
+        </div>
+      </div>
+      <div class="_OneCard" data-aos="fade-right" data-aos-delay="600">
+        <div class="_Image">
+          <div class="_ImageContainer">
+            <img src="../../../assets/images/box.svg" alt="box image" />
+          </div>
+        </div>
+        <div class="_TextCard">
+          <div class="_Title">
+            <span>Delivered with Care</span>
+          </div>
+          <div class="_Disc">
+            <span>Lacinia pellentesque leo</span>
+          </div>
+        </div>
+      </div>
+      <div class="_OneCard" data-aos="fade-right" data-aos-delay="700">
+        <div class="_Image">
+          <div class="_ImageContainer">
+            <img src="../../../assets/images/lova.svg" alt="love image" />
+          </div>
+        </div>
+        <div class="_TextCard">
+          <div class="_Title">
+            <span>Excellent Service</span>
+          </div>
+          <div class="_Disc">
+            <span>Blandit gravida viverra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_Products">
+    <div class="container-fluid">
+      <div
+        class="_Title"
+        data-aos="fade-down"
+        data-aos-delay="700"
+        style="padding-bottom: 2rem"
+      >
+        <h2>Our Prodcts</h2>
+      </div>
+      <div class="_ProductsInHome">
+        <app-product-card
+          *ngFor="let product of products"
+          [product]="product"
+          class="_OneProductInHome"
+          data-aos="fade-right"
+          data-aos-delay="700"
+        ></app-product-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="_SaleComponent">
+    <div class="container-fluid">
+      <div class="_Title">
+        <span>Flash Sale: Up to 50% Off On Select Items!</span>
+      </div>
+      <div class="_Disc">
+        <span>
+          Don’t miss out on our flash sale event! For a limited time, enjoy up
+          to 50% off on a selection of our best-selling products.
+        </span>
+      </div>
+      <div class="_BtnShop">
+        <button [routerLink]="['/products']">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="_Categories">
+    <div class="container-fluid">
+      <div class="_Title" data-aos="fade-down" data-aos-delay="700">
+        <h2>Our Categories</h2>
+      </div>
+      <div class="_OurCategories">
+        <div class="_OneCard" data-aos="zoom-in" data-aos-delay="1000">
+          <img
+            src="../../../assets/images/Categories/dessert-bloom.jpg"
+            alt="dessert-bloom image"
+          />
+          <p>Desert Bloom</p>
+        </div>
+        <div class="_OneCard" data-aos="zoom-in" data-aos-delay="1000">
+          <img
+            src="../../../assets/images/Categories/house-plant.jpg"
+            alt="dessert-bloom image"
+          />
+          <p>house-plant</p>
+        </div>
+        <div class="_OneCard" data-aos="zoom-in" data-aos-delay="1000">
+          <img
+            src="../../../assets/images/Categories/outdoor-plant.jpg"
+            alt="dessert-bloom image"
+          />
+          <p>outdoor-plant</p>
+        </div>
+        <div class="_OneCard" data-aos="zoom-in" data-aos-delay="1000">
+          <img
+            src="../../../assets/images/Categories/succulents.jpg"
+            alt="dessert-bloom image"
+          />
+          <p>succulents</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_StatusContainer">
+    <div class="container-fluid">
+      <div class="_statusImage">
+        <div class="_Image">
+          <img
+            src="../../../assets/images/stats-count.jpg"
+            alt="stats-count image"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          />
+        </div>
+      </div>
+      <div class="_TextHero">
+        <div class="_TitleText" data-aos="fade-left" data-aos-delay="600">
+          <h2>Your Premier Destination for All Green.</h2>
+        </div>
+        <div class="_DescText" data-aos="fade-left" data-aos-delay="700">
+          <p>
+            At Urban Jungle Co., we believe in the transformative power of
+            plants. Whether you’re a seasoned gardener or just starting your
+            green journey, our curated selection of plants will inspire and
+            enrich your living space.
+          </p>
+        </div>
+        <div class="_Status" data-aos="fade-left" data-aos-delay="800">
+          <div class="_allStatus">
+            <div class="_statusContent">
+              <span class="_statusNumber">98%</span>
+              <span class="_statusText">Customer Satisfaction </span>
+            </div>
+            <div class="_statusContent">
+              <span class="_statusNumber">103K </span>
+              <span class="_statusText">Plants Sold </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="_SaleComponent _Ready">
+    <div class="container-fluid">
+      <div class="_Title">
+        <span>Ready to Find your Perfect Plant?</span>
+      </div>
+      <div class="_Disc">
+        <span>
+          Browse our online store or visit us in person to experience the beauty
+          of nature.
+        </span>
+      </div>
+      <div class="_BtnShop">
+        <button [routerLink]="['/products']">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>

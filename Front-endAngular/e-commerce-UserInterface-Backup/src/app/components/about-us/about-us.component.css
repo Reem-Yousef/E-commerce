@@ -1,0 +1,596 @@
+._AboutUsContainer {
+    width: 100%;
+    height: auto;
+}
+
+._AboutUsContainer ._List-Header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+._AboutUsContainer ._List-Header ._About-Header {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../../../assets/images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+._AboutUsContainer ._List-Header ._About-Header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 18, 25, 0.6);
+    z-index: 1;
+}
+
+._AboutUsContainer ._List-Header ._About-Header>* {
+    position: relative;
+    z-index: 2;
+}
+
+._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title {
+    width: 50%;
+    text-align: center;
+}
+
+._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title ._PageName {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    color: var(--color-white);
+}
+
+._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title span {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4rem;
+    color: var(--color-white);
+}
+
+._AboutUsContainer ._StatusContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 4rem 0rem;
+    background-color: var(--color-white);
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._statusImage {
+    width: calc(90%/2 - 2rem);
+    display: flex;
+    justify-content: center;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._statusImageTwo {
+    order: 2;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._statusImage ._Image,
+._AboutUsContainer ._StatusContainer .container-fluid ._statusImage ._Image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero {
+    width: calc(90%/2 - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo {
+    order: 1;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText p {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 100;
+
+    color: var(--color-black);
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status::before {
+    content: '';
+    width: 90%;
+    margin: 0rem 0.5rem;
+    border-top: 1px solid var(--color-light-Gray);
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo ._Status ._allStatus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusText,
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._Owner ._Info ._statusText {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    color: var(--color-black);
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._Owner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._Owner ._Image {
+    border: 1px solid var(--color-light-green);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo ._Status ._allStatus ._Owner {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0rem;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo ._Status ._allStatus ._Owner ._Image {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo ._Status ._allStatus ._Owner ._Image img {
+    width: 20px;
+    height: 20px;
+    vertical-align: unset !important;
+}
+
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._Owner ._Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._Owner ._Info ._statusNumber {
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--color-black);
+}
+
+._AboutUsContainer ._ValuesContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 3rem 0rem;
+    background-color: var(--color-light-green);
+}
+
+._AboutUsContainer ._ValuesContainer .container {
+    max-width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+._AboutUsContainer ._ValuesContainer .container ._Title {
+    width: 60%;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--color-balck);
+    margin: 3rem;
+    line-height: 3rem;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    height: 100%;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Text span {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Text p {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--color-black);
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Text>* {
+    width: 100%;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box img {
+    width: 100%;
+    height: 100%;
+
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Image {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Image ._ImageContainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+._AboutUsContainer ._ValuesContainer .container .value-box ._Image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 534.5px) and (max-width: 991px) {
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title {
+        width: 80%;
+    }
+
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title ._PageName {
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+    }
+
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title span {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer {
+        padding: 2rem 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 1rem 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._statusImage {
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText {
+        display: flex;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+        width: 95%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText {
+        display: flex;
+        justify-content: center;
+        padding: 0rem;
+
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText p {
+        width: 95%;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status::before {
+        content: '';
+        width: 95%;
+        margin: 0rem 0rem;
+        border-top: 1px solid var(--color-light-Gray);
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+        width: 95%;
+        padding: 1rem 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusNumber {
+        font-size: 1.5rem;
+    }
+
+
+    ._AboutUsContainer ._ValuesContainer .container ._Title {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--color-balck);
+        margin: 1rem 0rem 3rem 0rem;
+        line-height: 2.5rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._statusImageTwo {
+        order: 1;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo {
+        order: 2;
+    }
+
+
+}
+
+
+@media (min-width: 0px) and (max-width: 534px) {
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader {
+        gap: 0.5rem;
+    }
+
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title {
+        width: 90%;
+    }
+
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title ._PageName {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    ._AboutUsContainer ._List-Header ._About-Header ._AboutContainerHeader ._Title span {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+
+    }
+
+    ._AboutUsContainer ._StatusContainer {
+        padding: 1rem 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._statusImage {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._TitleText h2 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._DescText p {
+        width: 100%;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status::before {
+        content: '';
+        width: 95%;
+        margin: 0rem 0rem;
+        border-top: 1px solid var(--color-light-Gray);
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusNumber {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHero ._Status ._allStatus ._statusContent ._statusText {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    ._AboutUsContainer ._ValuesContainer .container ._Title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--color-balck);
+        margin: 1rem 0rem 3rem 0rem;
+        line-height: 2rem;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._statusImageTwo {
+        order: 1;
+    }
+
+    ._AboutUsContainer ._StatusContainer .container-fluid ._TextHeroTwo {
+        order: 2;
+    }
+
+}
+
+@media (min-width: 668px) and (max-width: 991px) {
+
+    ._AboutUsContainer ._ValuesContainer .container ._Cards ._OneCard {
+        width: 50% !important;
+    }
+
+}
